@@ -16,10 +16,8 @@ This is the personal portfolio website of **Prahlad Chaudhary**, a passionate fu
 - JavaScript (Vanilla)
 - Font Awesome (Icons)
 
-## Installation
-1. Clone this repository.
-   ```bash
-   git clone https://prahlad-tech.github.io/portfolio
+## Portfolio link
+https://prahlad-tech.github.io/portfolio/
 
 ## About Me
 Hi! I'm Prahlad Chaudhary, currently an intern at NCode Technologies Inc., where I’ve been actively developing full stack applications. I enjoy solving real-world problems through elegant and efficient code. I'm always eager to learn new technologies and grow as a developer.
