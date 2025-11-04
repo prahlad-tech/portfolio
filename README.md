@@ -10,17 +10,8 @@ This is the personal portfolio website of **Prahlad Chaudhary**, a passionate fu
 - Contact form powered by Formspree for direct communication
 - Fully responsive and mobile-friendly design
 
-## Technologies Used
-- HTML5
-- Tailwind CSS
-- JavaScript (Vanilla)
-- Font Awesome (Icons)
-
 ## Portfolio link
 https://prahlad-tech.github.io/portfolio/
-
-## About Me
-Hi! I'm Prahlad Chaudhary, currently an intern at NCode Technologies Inc., where I’ve been actively developing full stack applications. I enjoy solving real-world problems through elegant and efficient code. I'm always eager to learn new technologies and grow as a developer.
 
 ## Contact
 📧 Email: prahladchaudhary2004@gmail.com
