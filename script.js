@@ -1,6 +1,10 @@
 const roles = [
-    "FULL STACK DEVELOPER",
-    "LARAVEL SPECIALIST"
+    "Full-Stack Web Developer",
+    "Laravel Backend Specialist",
+    "React.js UI Developer",
+    "Node.js API Developer",
+    "AI Agent Developer",
+    "Website Speed Optimizer"
 ];
 let i = 0, j = 0, currentRole = "", isDeleting = false;
 const typeTarget = document.getElementById("roleText");
