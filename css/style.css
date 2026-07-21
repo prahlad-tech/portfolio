@@ -1,0 +1,78 @@
+/* Custom global styles & overrides */
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.dark .glass-panel {
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Perspective Tilt Image Effect */
+.perspective-container {
+  perspective: 1000px;
+}
+
+.pop-image {
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s ease;
+}
+
+.pop-image:hover {
+  transform: translateY(-8px) rotateX(4deg) rotateY(4deg);
+  box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.2);
+}
+
+.dark .pop-image:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Scroll to Top Button styling */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 99;
+}
+
+/* Custom Selection style */
+::selection {
+  background-color: rgba(99, 102, 241, 0.2);
+  color: inherit;
+}
+
+/* Custom Header Blur Filter */
+.header-glass {
+  background: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(25px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
+}
+.dark .header-glass {
+  background: rgba(15, 23, 42, 0.3) !important;
+  backdrop-filter: blur(25px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
+}

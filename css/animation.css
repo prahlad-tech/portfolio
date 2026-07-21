@@ -1,0 +1,43 @@
+/* Keyframes and custom animations */
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.typewriter-cursor {
+  border-right: 2px solid currentColor;
+  animation: blink 0.75s step-end infinite;
+}
+
+/* Custom fade-in for page load items */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+/* Float Animation for Hero Image */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
