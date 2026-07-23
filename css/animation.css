@@ -1,7 +1,9 @@
 /* Keyframes and custom animations */
 
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% {
+    border-color: transparent;
+  }
 }
 
 .typewriter-cursor {
@@ -11,8 +13,15 @@
 
 /* Custom fade-in for page load items */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
@@ -33,11 +42,95 @@
 
 /* Float Animation for Hero Image */
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .animate-float {
   animation: float 4s ease-in-out infinite;
+}
+
+/* Custom slow-spin and reverse-spin animations for the radial hub */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes reverse-spin {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-reverse-spin {
+  animation: reverse-spin 12s linear infinite;
+}
+
+/* Staggered node floating animations */
+@keyframes float-node {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.float-node-1 { animation: float-node 6s ease-in-out infinite; }
+.float-node-2 { animation: float-node 6s ease-in-out infinite 1s; }
+.float-node-3 { animation: float-node 6s ease-in-out infinite 2s; }
+.float-node-4 { animation: float-node 6s ease-in-out infinite 3s; }
+.float-node-5 { animation: float-node 6s ease-in-out infinite 4s; }
+.float-node-6 { animation: float-node 6s ease-in-out infinite 5s; }
+
+/* SVG Neon Laser Pulse animations with staggered delays */
+@keyframes laser-pulse {
+  0% {
+    stroke-dashoffset: 320;
+  }
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
+
+.laser-spoke-1 { stroke-dasharray: 40 245; stroke-dashoffset: 320; animation: laser-pulse 3s linear infinite 0s; }
+.laser-spoke-2 { stroke-dasharray: 40 245; stroke-dashoffset: 320; animation: laser-pulse 3s linear infinite 0.5s; }
+.laser-spoke-3 { stroke-dasharray: 40 245; stroke-dashoffset: 320; animation: laser-pulse 3s linear infinite 1.0s; }
+.laser-spoke-4 { stroke-dasharray: 40 245; stroke-dashoffset: 320; animation: laser-pulse 3s linear infinite 1.5s; }
+.laser-spoke-5 { stroke-dasharray: 40 245; stroke-dashoffset: 320; animation: laser-pulse 3s linear infinite 2.0s; }
+.laser-spoke-6 { stroke-dasharray: 40 245; stroke-dashoffset: 320; animation: laser-pulse 3s linear infinite 2.5s; }
+
+/* Radar Expanding Sonar Wave Ripple Animations */
+@keyframes wave-expand {
+  0% {
+    r: 35px;
+    opacity: 0.8;
+    stroke-width: 2px;
+  }
+  50% {
+    opacity: 0.35;
+  }
+  100% {
+    r: 70px;
+    opacity: 0;
+    stroke-width: 0.5px;
+  }
+}
+
+.radar-wave-1 {
+  opacity: 0;
+  animation: wave-expand 4s cubic-bezier(0.2, 0.4, 0.7, 1) infinite 0s;
+}
+
+.radar-wave-2 {
+  opacity: 0;
+  animation: wave-expand 4s cubic-bezier(0.2, 0.4, 0.7, 1) infinite 2s;
 }

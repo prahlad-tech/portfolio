@@ -2,6 +2,31 @@
 
 :root {
   scroll-behavior: smooth;
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #7dd3fc;
+  --color-primary-400: #38bdf8;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-800: #075985;
+  --color-primary-900: #0c4a6e;
+  --color-primary-950: #082f49;
+}
+
+.dark {
+  --color-primary-50: #082f49;
+  --color-primary-100: #0c4a6e;
+  --color-primary-200: #075985;
+  --color-primary-300: #0369a1;
+  --color-primary-400: #93c5fd;
+  --color-primary-500: #60a5fa;
+  --color-primary-600: #93c5fd;
+  --color-primary-700: #60a5fa;
+  --color-primary-800: #3b82f6;
+  --color-primary-900: #2563eb;
+  --color-primary-950: #1e3a8a;
 }
 
 body {
@@ -32,7 +57,7 @@ body {
 
 .pop-image:hover {
   transform: translateY(-8px) rotateX(4deg) rotateY(4deg);
-  box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(147, 197, 253, 0.2);
 }
 
 .dark .pop-image:hover {
@@ -46,8 +71,10 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Scroll to Top Button styling */
@@ -61,7 +88,7 @@ body {
 
 /* Custom Selection style */
 ::selection {
-  background-color: rgba(99, 102, 241, 0.2);
+  background-color: rgba(147, 197, 253, 0.3);
   color: inherit;
 }
 
@@ -71,8 +98,216 @@ body {
   backdrop-filter: blur(25px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
 }
+
 .dark .header-glass {
   background: rgba(15, 23, 42, 0.3) !important;
   backdrop-filter: blur(25px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
 }
+
+/* Scroll-driven text reveal animation */
+.js-enabled .reveal-word {
+  opacity: 0.15;
+  color: inherit;
+  transition: opacity 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.js-enabled .reveal-word.past {
+  opacity: 1;
+  color: inherit;
+  text-shadow: none;
+}
+
+.js-enabled .reveal-word.active {
+  opacity: 1;
+  color: var(--color-primary-600);
+  text-shadow: 0 0 8px rgba(2, 132, 199, 0.15);
+}
+
+.dark .reveal-word.active {
+  color: var(--color-primary-400);
+  text-shadow: 0 0 12px rgba(147, 197, 253, 0.4);
+}
+
+/* Spotlight skills cards styling with 3D Parallax Tilt */
+.spotlight-card {
+  position: relative;
+  transition: transform 0.15s ease-out, border-color 0.3s ease, box-shadow 0.3s ease !important;
+  transform-style: preserve-3d;
+  will-change: transform;
+  z-index: 1;
+}
+
+.spotlight-card:hover {
+  border-color: rgba(2, 132, 199, 0.25) !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.08), 0 0 20px rgba(2, 132, 199, 0.08) !important;
+}
+
+.dark .spotlight-card:hover {
+  border-color: rgba(147, 197, 253, 0.3) !important;
+  box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.5), 0 0 25px rgba(147, 197, 253, 0.15) !important;
+}
+
+.spotlight-card {
+  background: radial-gradient(300px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
+      rgba(2, 132, 199, 0.04),
+      transparent 80%), #ffffff !important;
+}
+
+.dark .spotlight-card {
+  background: radial-gradient(300px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
+      rgba(147, 197, 253, 0.06),
+      transparent 80%), #0f172a !important;
+  /* slate-900 */
+}
+
+/* Skills card badge styling & float */
+.spotlight-card span {
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease !important;
+  transform: translateZ(15px);
+  cursor: default;
+}
+
+.spotlight-card span:hover {
+  background-color: var(--color-primary-600) !important;
+  color: #ffffff !important;
+  transform: translateZ(35px) translateY(-3px) !important;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2) !important;
+}
+
+.dark .spotlight-card span:hover {
+  background-color: var(--color-primary-600) !important;
+  color: #0f172a !important;
+  transform: translateZ(35px) translateY(-3px) !important;
+  box-shadow: 0 4px 12px rgba(147, 197, 253, 0.3) !important;
+}
+
+/* Skills card icon with 3D depth */
+.spotlight-card .p-3 {
+  transition: transform 0.2s ease-out !important;
+  transform: translateZ(20px);
+}
+
+.spotlight-card:hover .p-3 {
+  transform: translateZ(40px) scale(1.1) rotate(6deg) !important;
+}
+
+/* Skills card title with 3D depth */
+.spotlight-card h3 {
+  transition: transform 0.2s ease-out !important;
+  transform: translateZ(15px);
+}
+
+.spotlight-card:hover h3 {
+  transform: translateZ(30px) !important;
+}
+
+/* Skills badge container with 3D depth */
+.spotlight-card .flex-wrap {
+  transform-style: preserve-3d;
+}
+
+/* ==========================================
+   CONIC BORDER BEAMS & LIQUID PARALLAX BLOBS
+   ========================================== */
+
+.glow-card-wrapper {
+  position: relative;
+  border-radius: 16px;
+  padding: 1.5px;
+  overflow: hidden;
+  display: flex;
+  background: rgba(226, 232, 240, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.dark .glow-card-wrapper {
+  background: rgba(30, 41, 59, 0.3);
+}
+
+.glow-card-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px -10px rgba(56, 189, 248, 0.25);
+  background: transparent;
+}
+
+.glow-beam {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent 40%, var(--color-primary-500) 50%, #38bdf8 55%, transparent 65%);
+  animation: rotate-beam 5s linear infinite;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.glow-card-wrapper:hover .glow-beam {
+  opacity: 1;
+}
+
+.glow-card-content {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 15px;
+  position: relative;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.dark .glow-card-content {
+  background: #030712;
+}
+
+/* Liquid Blob Background Styles */
+.blob-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.glow-card-wrapper:hover .blob-container {
+  opacity: 1;
+}
+
+.blob-1,
+.blob-2 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  will-change: transform;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Conic Border rotation keyframes */
+@keyframes rotate-beam {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fixed sizing class for the radial timeline container on desktop */
+@media (min-width: 1024px) {
+  .radial-container-fixed {
+    width: 600px !important;
+    height: 600px !important;
+    min-width: 600px !important;
+    min-height: 600px !important;
+    max-width: 600px !important;
+    max-height: 600px !important;
+    flex-shrink: 0 !important;
+  }
+}
+

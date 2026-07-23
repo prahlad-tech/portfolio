@@ -6,39 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prahlad Chaudhary | Full-Stack Developer</title>
 
-  
+
   <meta name="description"
     content="Prahlad Chaudhary - Professional Full-Stack Developer specializing in Laravel, React.js, Node.js, and AI Agent Development. Check my experience and portfolio." />
   <meta name="keywords"
     content="Prahlad Chaudhary, Full-Stack Developer, Laravel Developer, React Developer, AI Agent Developer, Web Developer Ahmedabad" />
   <meta name="author" content="Prahlad Chaudhary" />
 
-  
+
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Prahlad Chaudhary | Full-Stack Developer" />
   <meta property="og:description"
     content="Professional Full-Stack Developer specializing in Laravel, React.js, Node.js, and AI Agent Development." />
   <meta property="og:image" content="images/my image.jpg" />
 
-  
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class'
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            indigo: {
+              50: 'var(--color-primary-50)',
+              100: 'var(--color-primary-100)',
+              200: 'var(--color-primary-200)',
+              300: 'var(--color-primary-300)',
+              400: 'var(--color-primary-400)',
+              500: 'var(--color-primary-500)',
+              600: 'var(--color-primary-600)',
+              700: 'var(--color-primary-700)',
+              800: 'var(--color-primary-800)',
+              900: 'var(--color-primary-900)',
+              950: 'var(--color-primary-950)',
+            }
+          }
+        }
+      }
     }
   </script>
 
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
 
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
-  
+
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/animation.css" />
 
@@ -52,16 +71,16 @@
 <body
   class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300 overflow-x-hidden">
 
-  
+
   <header class="fixed top-4 left-4 right-4 mx-auto max-w-6xl z-50 transition-all duration-300">
     <div
       class="header-glass border border-slate-200/50 dark:border-slate-800/40 rounded-2xl shadow-sm px-6 py-3.5 flex justify-between items-center transition-all duration-300">
-      
+
       <a href="#Home" class="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400 tracking-tight">
         PRAHLAD
       </a>
 
-      
+
       <nav id="nav-menu" class="hidden md:flex items-center space-x-8">
         <a href="#Home"
           class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">Home</a>
@@ -74,34 +93,36 @@
           I Do</a>
         <a href="#experience"
           class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">Experience</a>
+        <a href="#projects"
+          class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">Projects</a>
         <a href="#contact"
           class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors">Contact</a>
       </nav>
 
-      
+
       <div class="hidden md:flex items-center space-x-4">
-        
+
         <button
           class="theme-toggle p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors focus:outline-none">
           <i class="fa-solid fa-sun hidden dark:block text-yellow-400"></i>
           <i class="fa-solid fa-moon block dark:hidden"></i>
         </button>
-        
+
         <a href="my_resume.pdf" download target="_blank"
-          class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-xl shadow-md shadow-indigo-600/10 transition-all hover:-translate-y-0.5">
+          class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white dark:text-slate-950 font-semibold rounded-xl shadow-md shadow-indigo-600/10 transition-all hover:-translate-y-0.5">
           Get CV
         </a>
       </div>
 
-      
+
       <div class="flex items-center space-x-3 md:hidden">
-        
+
         <button
           class="theme-toggle p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors focus:outline-none">
           <i class="fa-solid fa-sun hidden dark:block text-yellow-400"></i>
           <i class="fa-solid fa-moon block dark:hidden"></i>
         </button>
-        
+
         <button id="hamburger"
           class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-indigo-600 dark:text-indigo-400 focus:outline-none flex flex-col gap-1 cursor-pointer">
           <span class="w-6 h-0.5 bg-current transition-transform duration-300"></span>
@@ -111,7 +132,7 @@
       </div>
     </div>
 
-    
+
     <div id="mobile-menu"
       class="hidden md:hidden absolute top-full left-0 w-full mt-2 bg-white/70 dark:bg-slate-950/70 backdrop-blur-xl border border-slate-200 dark:border-slate-800 px-6 py-6 space-y-4 shadow-xl rounded-2xl">
       <a href="#Home"
@@ -125,18 +146,20 @@
         I Do</a>
       <a href="#experience"
         class="block text-lg text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium">Experience</a>
+      <a href="#projects"
+        class="block text-lg text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium">Projects</a>
       <a href="#contact"
         class="block text-lg text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium">Contact</a>
       <div class="pt-4 border-t border-slate-200 dark:border-slate-800">
         <a href="my_resume.pdf" download target="_blank"
-          class="block text-center w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-xl shadow-md">
+          class="block text-center w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white dark:text-slate-950 font-semibold rounded-xl shadow-md">
           Get CV
         </a>
       </div>
     </div>
   </header>
 
-  
+
   <div id="hireModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex justify-center items-center hidden">
     <div
       class="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-md p-8 relative mx-4 border border-slate-100 dark:border-slate-800"
@@ -159,7 +182,7 @@
           class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl outline-none focus:ring-2 focus:ring-indigo-500 text-slate-900 dark:text-slate-100 transition-all"
           required></textarea>
         <button type="submit"
-          class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md transition-all hover:scale-[1.02]">
+          class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white dark:text-slate-950 font-semibold rounded-xl shadow-md transition-all hover:scale-[1.02]">
           Send Message
         </button>
         <p id="hireFormStatus" class="text-center text-sm mt-2"></p>
@@ -167,13 +190,13 @@
     </div>
   </div>
 
-  
+
   <section id="Home"
     class="relative min-h-screen pt-32 pb-16 flex items-center bg-white dark:bg-slate-950 transition-colors duration-300 overflow-hidden">
     <div
       class="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center justify-between gap-16 relative z-10">
 
-      
+
       <div class="max-w-xl text-center lg:text-left" data-aos="fade-right">
         <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
           HEY, <br />
@@ -192,10 +215,10 @@
           clean architecture, and user experience.
         </p>
 
-        
+
         <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
           <a href="#" id="hireBtn"
-            class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md shadow-indigo-600/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-600/20 active:scale-95 text-center">
+            class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white dark:text-slate-950 font-semibold rounded-xl shadow-md shadow-indigo-600/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-600/20 active:scale-95 text-center">
             Hire Me
           </a>
           <a href="#" id="contactBtnHero"
@@ -204,7 +227,7 @@
           </a>
         </div>
 
-        
+
         <div class="mt-10 flex justify-center lg:justify-start gap-8 text-3xl">
           <a href="https://www.linkedin.com/in/prahlad-chaudhary-108a45280" target="_blank"
             class="text-[#0077b5] dark:text-[#00a0dc] hover:text-[#00558f] transition-colors">
@@ -217,7 +240,7 @@
         </div>
       </div>
 
-      
+
       <div class="w-full max-w-sm sm:max-w-md lg:max-w-lg" data-aos="fade-left">
         <div class="relative w-full aspect-square flex justify-center items-center">
           <img src="images/boy-laptop.png" alt="Developer Illustration"
@@ -229,19 +252,16 @@
     </div>
   </section>
 
-  
-  <section class="py-16 bg-slate-50 dark:bg-slate-900/60 relative" id="about">
+
+  <section class="py-12 bg-slate-50 dark:bg-slate-900/60 relative" id="about">
     <div class="container mx-auto px-6">
       <div class="max-w-3xl mx-auto text-center mb-16">
-        <span
-          class="px-4 py-1.5 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-slate-700 dark:text-slate-300 text-sm font-semibold tracking-wider uppercase">About
-          Me</span>
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mt-4 tracking-tight">
           WHO I AM
         </h2>
       </div>
 
-      <div class="max-w-4xl mx-auto text-left" data-aos="fade-up">
+      <div class="max-w-4xl mx-auto text-left" id="about-text-container">
         <p class="text-base sm:text-lg md:text-xl text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
           Hello! I'm <span class="font-bold text-indigo-700">Prahlad Chaudhary</span>, a
           <span class="font-semibold">Full-Stack Developer</span> who builds fast, scalable web
@@ -268,23 +288,29 @@
     </div>
   </section>
 
-  
-  <section class="py-24 relative overflow-hidden" id="skills">
-    <div class="container mx-auto px-6">
+
+  <section class="py-12 relative overflow-hidden" id="skills">
+    <!-- Ambient Background Glows -->
+    <div
+      class="absolute top-1/4 left-10 w-96 h-96 bg-indigo-500/10 dark:bg-indigo-500/5 rounded-full blur-3xl pointer-events-none animate-pulse duration-[6000ms]">
+    </div>
+    <div
+      class="absolute bottom-1/4 right-10 w-[30rem] h-[30rem] bg-indigo-600/10 dark:bg-indigo-600/5 rounded-full blur-3xl pointer-events-none animate-pulse duration-[8000ms]">
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
       <div class="max-w-3xl mx-auto text-center mb-16">
-        <span
-          class="px-4 py-1.5 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-slate-700 dark:text-slate-300 text-sm font-semibold tracking-wider uppercase">Tech
-          Stack</span>
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mt-4 tracking-tight">
           MY SKILLS
         </h2>
       </div>
 
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm"
+
+        <div
+          class="spotlight-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm"
           data-aos="fade-up" data-aos-delay="100">
           <div class="flex items-center gap-3 mb-6">
             <div class="p-3 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 rounded-xl">
@@ -311,8 +337,9 @@
           </div>
         </div>
 
-        
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm"
+
+        <div
+          class="spotlight-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm"
           data-aos="fade-up" data-aos-delay="200">
           <div class="flex items-center gap-3 mb-6">
             <div class="p-3 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 rounded-xl">
@@ -335,8 +362,9 @@
           </div>
         </div>
 
-        
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm"
+
+        <div
+          class="spotlight-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm"
           data-aos="fade-up" data-aos-delay="300">
           <div class="flex items-center gap-3 mb-6">
             <div class="p-3 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 rounded-xl">
@@ -352,8 +380,9 @@
           </div>
         </div>
 
-        
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm"
+
+        <div
+          class="spotlight-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm"
           data-aos="fade-up" data-aos-delay="400">
           <div class="flex items-center gap-3 mb-6">
             <div class="p-3 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 rounded-xl">
@@ -371,8 +400,9 @@
           </div>
         </div>
 
-        
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm"
+
+        <div
+          class="spotlight-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm"
           data-aos="fade-up" data-aos-delay="500">
           <div class="flex items-center gap-3 mb-6">
             <div class="p-3 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 rounded-xl">
@@ -399,235 +429,484 @@
     </div>
   </section>
 
-  
-  <section class="py-24 bg-slate-50 dark:bg-slate-900/60 relative" id="services">
-    <div class="container mx-auto px-6">
+
+  <section class="py-12 bg-slate-50 dark:bg-slate-900/60 relative overflow-hidden" id="services">
+    <!-- Fine lines grid decoration -->
+    <div
+      class="absolute inset-0 bg-[linear-gradient(rgba(56,189,248,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(56,189,248,0.02)_1px,transparent_1px)] bg-[size:48px_48px] opacity-100 pointer-events-none">
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
       <div class="max-w-3xl mx-auto text-center mb-16">
-        <span
-          class="px-4 py-1.5 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-slate-700 dark:text-slate-300 text-sm font-semibold tracking-wider uppercase">Services</span>
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mt-4 tracking-tight">
           WHAT I BUILD
         </h2>
       </div>
 
-      
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        
-        <div
-          class="bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/60 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 duration-300"
-          data-aos="fade-up" data-aos-delay="100">
-          <div class="p-3.5 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 w-fit rounded-2xl mb-6">
-            <i class="fa-solid fa-laptop-code text-2xl"></i>
+        <!-- 1. Web Applications -->
+        <div class="glow-card-wrapper group relative" data-aos="fade-up" data-aos-delay="100">
+          <div class="glow-beam absolute inset-0"></div>
+          <div
+            class="glow-card-content h-full w-full bg-white dark:bg-slate-950 p-8 rounded-[15px] relative z-10 overflow-hidden flex flex-col justify-between">
+            <div
+              class="blob-container absolute inset-0 pointer-events-none z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden">
+              <div class="blob-1 absolute w-32 h-32 bg-sky-400/20 dark:bg-sky-500/15 rounded-full filter blur-2xl">
+              </div>
+              <div
+                class="blob-2 absolute w-32 h-32 bg-indigo-500/15 dark:bg-indigo-600/12 rounded-full filter blur-2xl">
+              </div>
+            </div>
+
+            <div class="relative z-10">
+              <div
+                class="p-3.5 bg-slate-50 dark:bg-slate-900 text-indigo-600 dark:text-sky-400 w-fit rounded-2xl mb-6 border border-slate-100 dark:border-slate-800">
+                <i class="fa-solid fa-laptop-code text-2xl"></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300 group-hover:text-sky-500">
+                Web Applications</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Designing and developing modern, responsive web applications utilizing robust architectures and
+                user-first visual interfaces.
+              </p>
+            </div>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Web Applications</h3>
-          <p class="text-slate-600 dark:text-slate-400">
-            Designing and developing modern, responsive web applications utilizing robust architectures and user-first
-            visual interfaces.
-          </p>
         </div>
 
-        
-        <div
-          class="bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/60 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 duration-300"
-          data-aos="fade-up" data-aos-delay="200">
-          <div class="p-3.5 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 w-fit rounded-2xl mb-6">
-            <i class="fa-solid fa-gears text-2xl"></i>
+        <!-- 2. Backend APIs -->
+        <div class="glow-card-wrapper group relative" data-aos="fade-up" data-aos-delay="200">
+          <div class="glow-beam absolute inset-0"></div>
+          <div
+            class="glow-card-content h-full w-full bg-white dark:bg-slate-950 p-8 rounded-[15px] relative z-10 overflow-hidden flex flex-col justify-between">
+            <div
+              class="blob-container absolute inset-0 pointer-events-none z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden">
+              <div class="blob-1 absolute w-32 h-32 bg-sky-400/20 dark:bg-sky-500/15 rounded-full filter blur-2xl">
+              </div>
+              <div
+                class="blob-2 absolute w-32 h-32 bg-indigo-500/15 dark:bg-indigo-600/12 rounded-full filter blur-2xl">
+              </div>
+            </div>
+
+            <div class="relative z-10">
+              <div
+                class="p-3.5 bg-slate-50 dark:bg-slate-900 text-indigo-600 dark:text-sky-400 w-fit rounded-2xl mb-6 border border-slate-100 dark:border-slate-800">
+                <i class="fa-solid fa-gears text-2xl"></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300 group-hover:text-sky-500">
+                Backend APIs</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Building secure, highly performant, and scalable RESTful APIs with clean database schemas and seamless
+                service integrations.
+              </p>
+            </div>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Backend APIs</h3>
-          <p class="text-slate-600 dark:text-slate-400">
-            Building secure, highly performant, and scalable RESTful APIs with clean database schemas and seamless
-            service integrations.
-          </p>
         </div>
 
-        
-        <div
-          class="bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/60 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 duration-300"
-          data-aos="fade-up" data-aos-delay="300">
-          <div class="p-3.5 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 w-fit rounded-2xl mb-6">
-            <i class="fa-solid fa-brain text-2xl"></i>
+        <!-- 3. AI Automation -->
+        <div class="glow-card-wrapper group relative" data-aos="fade-up" data-aos-delay="300">
+          <div class="glow-beam absolute inset-0"></div>
+          <div
+            class="glow-card-content h-full w-full bg-white dark:bg-slate-950 p-8 rounded-[15px] relative z-10 overflow-hidden flex flex-col justify-between">
+            <div
+              class="blob-container absolute inset-0 pointer-events-none z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden">
+              <div class="blob-1 absolute w-32 h-32 bg-sky-400/20 dark:bg-sky-500/15 rounded-full filter blur-2xl">
+              </div>
+              <div
+                class="blob-2 absolute w-32 h-32 bg-indigo-500/15 dark:bg-indigo-600/12 rounded-full filter blur-2xl">
+              </div>
+            </div>
+
+            <div class="relative z-10">
+              <div
+                class="p-3.5 bg-slate-50 dark:bg-slate-900 text-indigo-600 dark:text-sky-400 w-fit rounded-2xl mb-6 border border-slate-100 dark:border-slate-800">
+                <i class="fa-solid fa-brain text-2xl"></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300 group-hover:text-sky-500">
+                AI Automation</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Creating intelligent agents, webhook automations, and LLM-driven workflows that eliminate manual
+                processing overhead.
+              </p>
+            </div>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">AI Automation</h3>
-          <p class="text-slate-600 dark:text-slate-400">
-            Creating intelligent agents, webhook automations, and LLM-driven workflows that eliminate manual processing
-            overhead.
-          </p>
         </div>
 
-        
-        <div
-          class="bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/60 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 duration-300"
-          data-aos="fade-up" data-aos-delay="400">
-          <div class="p-3.5 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 w-fit rounded-2xl mb-6">
-            <i class="fa-solid fa-database text-2xl"></i>
+        <!-- 4. Database Design -->
+        <div class="glow-card-wrapper group relative" data-aos="fade-up" data-aos-delay="400">
+          <div class="glow-beam absolute inset-0"></div>
+          <div
+            class="glow-card-content h-full w-full bg-white dark:bg-slate-950 p-8 rounded-[15px] relative z-10 overflow-hidden flex flex-col justify-between">
+            <div
+              class="blob-container absolute inset-0 pointer-events-none z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden">
+              <div class="blob-1 absolute w-32 h-32 bg-sky-400/20 dark:bg-sky-500/15 rounded-full filter blur-2xl">
+              </div>
+              <div
+                class="blob-2 absolute w-32 h-32 bg-indigo-500/15 dark:bg-indigo-600/12 rounded-full filter blur-2xl">
+              </div>
+            </div>
+
+            <div class="relative z-10">
+              <div
+                class="p-3.5 bg-slate-50 dark:bg-slate-900 text-indigo-600 dark:text-sky-400 w-fit rounded-2xl mb-6 border border-slate-100 dark:border-slate-800">
+                <i class="fa-solid fa-database text-2xl"></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300 group-hover:text-sky-500">
+                Database Design</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Formulating relational configurations and query optimization strategies for maximum read/write
+                performance.
+              </p>
+            </div>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Database Design</h3>
-          <p class="text-slate-600 dark:text-slate-400">
-            Formulating relational configurations and query optimization strategies for maximum read/write performance.
-          </p>
         </div>
 
-        
-        <div
-          class="bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/60 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 duration-300"
-          data-aos="fade-up" data-aos-delay="500">
-          <div class="p-3.5 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 w-fit rounded-2xl mb-6">
-            <i class="fa-solid fa-gauge-high text-2xl"></i>
+        <!-- 5. Performance Optimization -->
+        <div class="glow-card-wrapper group relative" data-aos="fade-up" data-aos-delay="500">
+          <div class="glow-beam absolute inset-0"></div>
+          <div
+            class="glow-card-content h-full w-full bg-white dark:bg-slate-950 p-8 rounded-[15px] relative z-10 overflow-hidden flex flex-col justify-between">
+            <div
+              class="blob-container absolute inset-0 pointer-events-none z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden">
+              <div class="blob-1 absolute w-32 h-32 bg-sky-400/20 dark:bg-sky-500/15 rounded-full filter blur-2xl">
+              </div>
+              <div
+                class="blob-2 absolute w-32 h-32 bg-indigo-500/15 dark:bg-indigo-600/12 rounded-full filter blur-2xl">
+              </div>
+            </div>
+
+            <div class="relative z-10">
+              <div
+                class="p-3.5 bg-slate-50 dark:bg-slate-900 text-indigo-600 dark:text-sky-400 w-fit rounded-2xl mb-6 border border-slate-100 dark:border-slate-800">
+                <i class="fa-solid fa-gauge-high text-2xl"></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300 group-hover:text-sky-500">
+                Performance Optimization</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Diagnosing loading bottlenecks, caching queries, and minifying bundle runtimes for lightning-fast
+                speeds.
+              </p>
+            </div>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Performance Optimization</h3>
-          <p class="text-slate-600 dark:text-slate-400">
-            Diagnosing loading bottlenecks, caching queries, and minifying bundle runtimes for lightning-fast speeds.
-          </p>
         </div>
 
-        
-        <div
-          class="bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/60 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 duration-300"
-          data-aos="fade-up" data-aos-delay="600">
-          <div class="p-3.5 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 w-fit rounded-2xl mb-6">
-            <i class="fa-solid fa-mobile-screen-button text-2xl"></i>
+        <!-- 6. Responsive UI Development -->
+        <div class="glow-card-wrapper group relative" data-aos="fade-up" data-aos-delay="600">
+          <div class="glow-beam absolute inset-0"></div>
+          <div
+            class="glow-card-content h-full w-full bg-white dark:bg-slate-950 p-8 rounded-[15px] relative z-10 overflow-hidden flex flex-col justify-between">
+            <div
+              class="blob-container absolute inset-0 pointer-events-none z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden">
+              <div class="blob-1 absolute w-32 h-32 bg-sky-400/20 dark:bg-sky-500/15 rounded-full filter blur-2xl">
+              </div>
+              <div
+                class="blob-2 absolute w-32 h-32 bg-indigo-500/15 dark:bg-indigo-600/12 rounded-full filter blur-2xl">
+              </div>
+            </div>
+
+            <div class="relative z-10">
+              <div
+                class="p-3.5 bg-slate-50 dark:bg-slate-900 text-indigo-600 dark:text-sky-400 w-fit rounded-2xl mb-6 border border-slate-100 dark:border-slate-800">
+                <i class="fa-solid fa-mobile-screen-button text-2xl"></i>
+              </div>
+              <h3
+                class="text-xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300 group-hover:text-sky-500">
+                Responsive UI Development</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                Ensuring pixel-perfect responsive execution across all device sizes using custom Tailwind grid
+                configurations.
+              </p>
+            </div>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Responsive UI Development</h3>
-          <p class="text-slate-600 dark:text-slate-400">
-            Ensuring pixel-perfect responsive execution across all device sizes using custom Tailwind grid
-            configurations.
-          </p>
         </div>
 
       </div>
     </div>
   </section>
 
-  
-  <section class="py-24 relative bg-slate-50/50 dark:bg-slate-900/10" id="process">
-    <div class="container mx-auto px-6">
-      <div class="max-w-3xl mx-auto text-center mb-16">
-        <span
-          class="px-4 py-1.5 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-slate-700 dark:text-slate-300 text-sm font-semibold tracking-wider uppercase">Timeline</span>
+
+  <section class="py-12 relative bg-slate-50/50 dark:bg-slate-900/10 overflow-hidden" id="process">
+    <div class="container mx-auto px-6 relative z-10">
+
+      <!-- Main Section Header Centered at the Top (Full Width) -->
+      <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mt-4 tracking-tight">
           DEVELOPMENT PROCESS
         </h2>
       </div>
 
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        
-        <div
-          class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group"
-          data-aos="fade-up" data-aos-delay="100">
-          <div
-            class="absolute top-0 right-0 w-24 h-24 bg-indigo-500/5 rounded-bl-full flex items-center justify-end pr-4 pt-4 text-slate-300 dark:text-slate-800 font-bold text-4xl select-none group-hover:text-indigo-500/20 transition-colors">
-            01</div>
-          <div
-            class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-6 shadow-sm border border-indigo-100/30">
-            <i class="fa-solid fa-list-check text-lg"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Planning</h3>
-          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Analyzing business requirements, scoping
-            APIs, choosing technologies, and drafting relational schemas.</p>
+      <!-- Side-by-Side Content Grid Below Header -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center max-w-6xl mx-auto">
+
+        <!-- Left Column: Typography & Description (Col-span 5) -->
+        <div class="lg:col-span-5 max-w-xl" data-aos="fade-right">
+          <span
+            class="text-xs font-bold text-indigo-600 dark:text-indigo-400 tracking-widest uppercase flex items-center gap-2 mb-4">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-600 dark:bg-indigo-400 animate-pulse"></span>
+            My Workflow
+          </span>
+          <h3 class="text-4xl font-extrabold text-slate-900 dark:text-white leading-[1.15] tracking-tight">
+            One process.<br>
+            <span class="text-indigo-600 dark:text-indigo-400">Every stage covered.</span>
+          </h3>
+          <p class="text-slate-600 dark:text-slate-400 mt-6 text-base leading-relaxed">
+            From first concept to deployment and beyond, I handle the entire digital journey with a clear, structured
+            roadmap, ensuring every detail of your application is accounted for.
+          </p>
         </div>
 
-        
-        <div
-          class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group"
-          data-aos="fade-up" data-aos-delay="200">
-          <div
-            class="absolute top-0 right-0 w-24 h-24 bg-indigo-500/5 rounded-bl-full flex items-center justify-end pr-4 pt-4 text-slate-300 dark:text-slate-800 font-bold text-4xl select-none group-hover:text-indigo-500/20 transition-colors">
-            02</div>
-          <div
-            class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-6 shadow-sm border border-indigo-100/30">
-            <i class="fa-solid fa-pen-ruler text-lg"></i>
+        <!-- Right Column: Radial Hub (Col-span 7) -->
+        <div class="lg:col-span-7 flex justify-center items-center relative" data-aos="zoom-in" data-aos-delay="100">
+
+          <!-- DESKTOP RADIAL NETWORK HUB (Hidden on Mobile) -->
+          <div class="hidden lg:block relative radial-container-fixed mx-auto">
+
+            <!-- SVG Background Tracks, Expanding Radar Waves & Staggered Bold Lasers -->
+            <svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 600 600"
+              shape-rendering="geometricPrecision">
+              <defs>
+                <!-- Neon glow filter for laser lines and radar waves -->
+                <filter id="neon-glow" filterUnits="userSpaceOnUse" x="-50" y="-50" width="700" height="700">
+                  <feGaussianBlur stdDeviation="3.5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- 1. Background Concentric Tracks (Expanded to r=240) -->
+              <circle cx="300" cy="300" r="240" stroke="rgba(99, 102, 241, 0.15)" stroke-width="1.5" fill="none"
+                stroke-dasharray="6 6" />
+
+              <!-- 2. Expanding Sonar Radar Wave Ripples (Center expanding waves dissolving at 1st circle r=70px) -->
+              <circle cx="300" cy="300" r="35" class="radar-wave-1" stroke="#38bdf8" fill="none"
+                filter="url(#neon-glow)" />
+              <circle cx="300" cy="300" r="35" class="radar-wave-2" stroke="#38bdf8" fill="none"
+                filter="url(#neon-glow)" />
+
+              <!-- 3. Static Wire Connections (Thick 3.0px connections, vertical offset by 0.1px to trigger anti-aliasing) -->
+              <line x1="300" y1="300" x2="300.1" y2="60" stroke="rgba(99, 102, 241, 0.35)" stroke-width="3.0"
+                stroke-linecap="round" />
+              <line x1="300" y1="300" x2="508" y2="180" stroke="rgba(99, 102, 241, 0.35)" stroke-width="3.0"
+                stroke-linecap="round" />
+              <line x1="300" y1="300" x2="508" y2="420" stroke="rgba(99, 102, 241, 0.35)" stroke-width="3.0"
+                stroke-linecap="round" />
+              <line x1="300" y1="300" x2="299.9" y2="540" stroke="rgba(99, 102, 241, 0.35)" stroke-width="3.0"
+                stroke-linecap="round" />
+              <line x1="300" y1="300" x2="92" y2="420" stroke="rgba(99, 102, 241, 0.35)" stroke-width="3.0"
+                stroke-linecap="round" />
+              <line x1="300" y1="300" x2="92" y2="180" stroke="rgba(99, 102, 241, 0.35)" stroke-width="3.0"
+                stroke-linecap="round" />
+
+              <!-- 4. Staggered Animated Laser Beam Pulses (Uniform bold stroke-width="4.5" and subpixel anti-aliasing trigger) -->
+              <line x1="300" y1="300" x2="300.1" y2="60" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round"
+                class="laser-spoke-1" filter="url(#neon-glow)" />
+              <line x1="300" y1="300" x2="508" y2="180" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round"
+                class="laser-spoke-2" filter="url(#neon-glow)" />
+              <line x1="300" y1="300" x2="508" y2="420" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round"
+                class="laser-spoke-3" filter="url(#neon-glow)" />
+              <line x1="300" y1="300" x2="299.9" y2="540" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round"
+                class="laser-spoke-4" filter="url(#neon-glow)" />
+              <line x1="300" y1="300" x2="92" y2="420" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round"
+                class="laser-spoke-5" filter="url(#neon-glow)" />
+              <line x1="300" y1="300" x2="92" y2="180" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round"
+                class="laser-spoke-6" filter="url(#neon-glow)" />
+            </svg>
+
+            <!-- Central Hub Core Anchor -->
+            <div
+              class="absolute left-[300px] top-[300px] -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-slate-900 dark:bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/10 z-20 hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-code text-indigo-400 text-base"></i>
+            </div>
+
+            <!-- STEP 1: PLANNING (Top: 300, 60) -->
+            <div class="absolute left-[300px] top-[60px] -translate-x-1/2 -translate-y-1/2 z-10">
+              <div
+                class="w-[180px] p-3.5 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 rounded-xl shadow-sm hover:shadow-lg hover:border-indigo-500/40 dark:hover:border-indigo-400/40 transition-all duration-300 group">
+                <div class="flex items-center gap-1.5 mb-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0 animate-pulse"></span>
+                  <span class="text-[10px] font-bold text-indigo-600 dark:text-indigo-400">01</span>
+                  <h4 class="text-xs font-bold text-slate-900 dark:text-white leading-tight">Planning</h4>
+                </div>
+                <p class="text-[10px] text-slate-500 dark:text-slate-400 mt-1 leading-snug">Analyzing business
+                  requirements, scoping APIs, choosing technologies, and drafting relational schemas.</p>
+              </div>
+            </div>
+
+            <!-- STEP 2: UI DEVELOPMENT (Top-Right: 508, 180) -->
+            <div class="absolute left-[508px] top-[180px] -translate-x-1/2 -translate-y-1/2 z-10">
+              <div
+                class="w-[180px] p-3.5 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 rounded-xl shadow-sm hover:shadow-lg hover:border-indigo-500/40 dark:hover:border-indigo-400/40 transition-all duration-300 group">
+                <div class="flex items-center gap-1.5 mb-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0 animate-pulse"></span>
+                  <span class="text-[10px] font-bold text-indigo-600 dark:text-indigo-400">02</span>
+                  <h4 class="text-xs font-bold text-slate-900 dark:text-white leading-tight">UI Development</h4>
+                </div>
+                <p class="text-[10px] text-slate-500 dark:text-slate-400 mt-1 leading-snug">Designing interactive
+                  responsive interfaces using Tailwind CSS and lightweight components.</p>
+              </div>
+            </div>
+
+            <!-- STEP 3: BACKEND DEVELOPMENT (Bottom-Right: 508, 420) -->
+            <div class="absolute left-[508px] top-[420px] -translate-x-1/2 -translate-y-1/2 z-10">
+              <div
+                class="w-[180px] p-3.5 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 rounded-xl shadow-sm hover:shadow-lg hover:border-indigo-500/40 dark:hover:border-indigo-400/40 transition-all duration-300 group">
+                <div class="flex items-center gap-1.5 mb-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0 animate-pulse"></span>
+                  <span class="text-[10px] font-bold text-indigo-600 dark:text-indigo-400">03</span>
+                  <h4 class="text-xs font-bold text-slate-900 dark:text-white leading-tight">Backend Development</h4>
+                </div>
+                <p class="text-[10px] text-slate-500 dark:text-slate-400 mt-1 leading-snug">Developing backend routes,
+                  middleware integrations, controller policies, and relational database migrations.</p>
+              </div>
+            </div>
+
+            <!-- STEP 4: API INTEGRATION (Bottom: 300, 540) -->
+            <div class="absolute left-[300px] top-[540px] -translate-x-1/2 -translate-y-1/2 z-10">
+              <div
+                class="w-[180px] p-3.5 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 rounded-xl shadow-sm hover:shadow-lg hover:border-indigo-500/40 dark:hover:border-indigo-400/40 transition-all duration-300 group">
+                <div class="flex items-center gap-1.5 mb-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0 animate-pulse"></span>
+                  <span class="text-[10px] font-bold text-indigo-600 dark:text-indigo-400">04</span>
+                  <h4 class="text-xs font-bold text-slate-900 dark:text-white leading-tight">API Integration</h4>
+                </div>
+                <p class="text-[10px] text-slate-500 dark:text-slate-400 mt-1 leading-snug">Connecting frontend services
+                  with server-side API endpoints, utilizing AJAX calls and secure auth tokens.</p>
+              </div>
+            </div>
+
+            <!-- STEP 5: TESTING (Bottom-Left: 92, 420) -->
+            <div class="absolute left-[92px] top-[420px] -translate-x-1/2 -translate-y-1/2 z-10">
+              <div
+                class="w-[180px] p-3.5 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 rounded-xl shadow-sm hover:shadow-lg hover:border-indigo-500/40 dark:hover:border-indigo-400/40 transition-all duration-300 group">
+                <div class="flex items-center gap-1.5 mb-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0 animate-pulse"></span>
+                  <span class="text-[10px] font-bold text-indigo-600 dark:text-indigo-400">05</span>
+                  <h4 class="text-xs font-bold text-slate-900 dark:text-white leading-tight">Testing</h4>
+                </div>
+                <p class="text-[10px] text-slate-500 dark:text-slate-400 mt-1 leading-snug">Performing integration
+                  validation, unit testing modules, optimizing performance, and resolving console anomalies.</p>
+              </div>
+            </div>
+
+            <!-- STEP 6: DEPLOYMENT (Top-Left: 92, 180) -->
+            <div class="absolute left-[92px] top-[180px] -translate-x-1/2 -translate-y-1/2 z-10">
+              <div
+                class="w-[180px] p-3.5 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 rounded-xl shadow-sm hover:shadow-lg hover:border-indigo-500/40 dark:hover:border-indigo-400/40 transition-all duration-300 group">
+                <div class="flex items-center gap-1.5 mb-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0 animate-pulse"></span>
+                  <span class="text-[10px] font-bold text-indigo-600 dark:text-indigo-400">06</span>
+                  <h4 class="text-xs font-bold text-slate-900 dark:text-white leading-tight">Deployment</h4>
+                </div>
+                <p class="text-[10px] text-slate-500 dark:text-slate-400 mt-1 leading-snug">Deploying assets onto
+                  production hosting, configuring domain DNS properties, and monitoring query telemetry.</p>
+              </div>
+            </div>
+
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">UI Development</h3>
-          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Designing interactive responsive
-            interfaces using Tailwind CSS and lightweight components.</p>
+
+          <!-- MOBILE VERTICAL TIMELINE LIST (Hidden on Desktop) -->
+          <div class="lg:hidden relative pl-8 flex flex-col gap-6 w-full">
+            <div
+              class="absolute left-3 top-0 bottom-0 w-0.5 border-l-2 border-dashed border-indigo-200 dark:border-indigo-900/60 pointer-events-none">
+            </div>
+
+            <div
+              class="relative p-4 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+              <div
+                class="absolute -left-[27px] top-5 w-3 h-3 bg-indigo-600 dark:bg-indigo-400 rounded-full border-2 border-white dark:border-slate-950 shadow-md">
+              </div>
+              <span class="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase">01 / Process</span>
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white mt-0.5">Planning</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Analyzing business requirements, scoping APIs,
+                choosing technologies, and drafting relational schemas.</p>
+            </div>
+
+            <div
+              class="relative p-4 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+              <div
+                class="absolute -left-[27px] top-5 w-3 h-3 bg-indigo-600 dark:bg-indigo-400 rounded-full border-2 border-white dark:border-slate-950 shadow-md">
+              </div>
+              <span class="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase">02 / Process</span>
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white mt-0.5">UI Development</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Designing interactive responsive interfaces
+                using Tailwind CSS and lightweight components.</p>
+            </div>
+
+            <div
+              class="relative p-4 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+              <div
+                class="absolute -left-[27px] top-5 w-3 h-3 bg-indigo-600 dark:bg-indigo-400 rounded-full border-2 border-white dark:border-slate-950 shadow-md">
+              </div>
+              <span class="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase">03 / Process</span>
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white mt-0.5">Backend Development</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Developing backend routes, middleware
+                integrations, controller policies, and relational database migrations.</p>
+            </div>
+
+            <div
+              class="relative p-4 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+              <div
+                class="absolute -left-[27px] top-5 w-3 h-3 bg-indigo-600 dark:bg-indigo-400 rounded-full border-2 border-white dark:border-slate-950 shadow-md">
+              </div>
+              <span class="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase">04 / Process</span>
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white mt-0.5">API Integration</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Connecting frontend services with server-side
+                API endpoints, utilizing AJAX calls and secure auth tokens.</p>
+            </div>
+
+            <div
+              class="relative p-4 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+              <div
+                class="absolute -left-[27px] top-5 w-3 h-3 bg-indigo-600 dark:bg-indigo-400 rounded-full border-2 border-white dark:border-slate-950 shadow-md">
+              </div>
+              <span class="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase">05 / Process</span>
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white mt-0.5">Testing</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Performing integration validation, unit testing
+                modules, optimizing performance, and resolving console anomalies.</p>
+            </div>
+
+            <div
+              class="relative p-4 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+              <div
+                class="absolute -left-[27px] top-5 w-3 h-3 bg-indigo-600 dark:bg-indigo-400 rounded-full border-2 border-white dark:border-slate-950 shadow-md">
+              </div>
+              <span class="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase">06 / Process</span>
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white mt-0.5">Deployment</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Deploying assets onto production hosting,
+                configuring domain DNS properties, and monitoring query telemetry.</p>
+            </div>
+
+          </div>
+
         </div>
 
-        
-        <div
-          class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group"
-          data-aos="fade-up" data-aos-delay="300">
-          <div
-            class="absolute top-0 right-0 w-24 h-24 bg-indigo-500/5 rounded-bl-full flex items-center justify-end pr-4 pt-4 text-slate-300 dark:text-slate-800 font-bold text-4xl select-none group-hover:text-indigo-500/20 transition-colors">
-            03</div>
-          <div
-            class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-6 shadow-sm border border-indigo-100/30">
-            <i class="fa-solid fa-laptop-code text-lg"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Backend Development</h3>
-          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Developing backend routes, middleware
-            integrations, controller policies, and relational database migrations.</p>
-        </div>
-
-        
-        <div
-          class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group"
-          data-aos="fade-up" data-aos-delay="400">
-          <div
-            class="absolute top-0 right-0 w-24 h-24 bg-indigo-500/5 rounded-bl-full flex items-center justify-end pr-4 pt-4 text-slate-300 dark:text-slate-800 font-bold text-4xl select-none group-hover:text-indigo-500/20 transition-colors">
-            04</div>
-          <div
-            class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-6 shadow-sm border border-indigo-100/30">
-            <i class="fa-solid fa-circle-nodes text-lg"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">API Integration</h3>
-          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Connecting frontend services with
-            server-side API endpoints, utilizing AJAX calls and secure auth tokens.</p>
-        </div>
-
-        
-        <div
-          class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group"
-          data-aos="fade-up" data-aos-delay="500">
-          <div
-            class="absolute top-0 right-0 w-24 h-24 bg-indigo-500/5 rounded-bl-full flex items-center justify-end pr-4 pt-4 text-slate-300 dark:text-slate-800 font-bold text-4xl select-none group-hover:text-indigo-500/20 transition-colors">
-            05</div>
-          <div
-            class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-6 shadow-sm border border-indigo-100/30">
-            <i class="fa-solid fa-vial-virus text-lg"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Testing</h3>
-          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Performing integration validation, unit
-            testing modules, optimizing performance, and resolving console anomalies.</p>
-        </div>
-
-        
-        <div
-          class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group"
-          data-aos="fade-up" data-aos-delay="600">
-          <div
-            class="absolute top-0 right-0 w-24 h-24 bg-indigo-500/5 rounded-bl-full flex items-center justify-end pr-4 pt-4 text-slate-300 dark:text-slate-800 font-bold text-4xl select-none group-hover:text-indigo-500/20 transition-colors">
-            06</div>
-          <div
-            class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-6 shadow-sm border border-indigo-100/30">
-            <i class="fa-solid fa-cloud-arrow-up text-lg"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Deployment</h3>
-          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Deploying assets onto production
-            hosting, configuring domain DNS properties, and monitoring query telemetry.</p>
-        </div>
       </div>
+
     </div>
   </section>
 
 
 
-  
-  <section class="py-24 bg-slate-50 dark:bg-slate-900/60 relative" id="experience">
+
+  <section class="py-12 bg-slate-50 dark:bg-slate-900/60 relative" id="experience">
     <div class="container mx-auto px-6">
       <div class="max-w-3xl mx-auto text-center mb-16">
-        <span
-          class="px-4 py-1.5 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-slate-700 dark:text-slate-300 text-sm font-semibold tracking-wider uppercase">History</span>
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mt-4 tracking-tight">
           PROFESSIONAL EXPERIENCE
         </h2>
       </div>
 
-      
+
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
-        
+
         <div
           class="relative bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-md border-t-4 border-green-500 flex flex-col justify-between"
           data-aos="fade-up" data-aos-delay="100">
@@ -639,7 +918,7 @@
                 <p class="text-slate-400 dark:text-slate-500 text-sm mt-1"><i
                     class="fa-solid fa-location-dot mr-1.5"></i>Ahmedabad, Gujarat</p>
               </div>
-              
+
               <div
                 class="w-16 h-16 rounded-xl border border-slate-200/50 dark:border-slate-800 shadow-sm p-1 bg-white flex items-center justify-center">
                 <img src="images/kad-logo.png" alt="KAD InfoTech logo" class="w-full h-full object-contain" />
@@ -697,7 +976,7 @@
           </div>
         </div>
 
-        
+
         <div
           class="relative bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-md border-t-4 border-blue-500 flex flex-col justify-between"
           data-aos="fade-up" data-aos-delay="200">
@@ -709,7 +988,7 @@
                 <p class="text-slate-400 dark:text-slate-500 text-sm mt-1"><i
                     class="fa-solid fa-location-dot mr-1.5"></i>Ahmedabad, Gujarat</p>
               </div>
-              
+
               <div
                 class="w-16 h-16 rounded-xl border border-slate-200/50 dark:border-slate-800 shadow-sm p-1 bg-white flex items-center justify-center">
                 <img src="images/NCode-logo.png" alt="NCode Technologies logo" class="w-full h-full object-contain" />
@@ -772,19 +1051,105 @@
     </div>
   </section>
 
-  
-  <section class="py-24 relative" id="contact">
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="py-12 relative overflow-hidden" id="projects">
     <div class="container mx-auto px-6">
       <div class="max-w-3xl mx-auto text-center mb-16">
-        <span
-          class="px-4 py-1.5 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-slate-700 dark:text-slate-300 text-sm font-semibold tracking-wider uppercase">Contact</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mt-4 tracking-tight">
+          PROJECTS
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+        <!-- V-Work -->
+        <div
+          class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+          data-aos="fade-up" data-aos-delay="100">
+          <img src="images/v-work.png" alt="V-Work Project" class="w-full h-auto" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">V-Work - Project Management</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              Developed a task and project management system using Laravel and
+              MySQL. The system includes admin and user roles, project
+              assignment, task updates, time tracking, and a built-in chat
+              feature. Frontend built with HTML, CSS, Bootstrap, and JavaScript
+              to ensure a clean and responsive UI.
+            </p>
+          </div>
+        </div>
+
+        <!-- Vibe Cart -->
+        <div
+          class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+          data-aos="fade-up" data-aos-delay="200">
+          <img src="images/vibecart1.png" alt="E-Commerce Project" class="w-full h-auto" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Vibe Cart Website</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              Built a e-commerce website with full user and admin functionality. Key
+              features include product filtering (main/category/subcategory), add to cart & wishlist
+              (with guest support), coupon-based checkout, order tracking, and admin order
+              management. Fully responsive and live at
+              <a href="https://vibecart.free.nf/"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline"><u>vibecart.free.nf</u></a>. Payment
+              gateway is
+              excluded for now as it's a learning-focused project.
+            </p>
+          </div>
+        </div>
+
+        <!-- Chat Board -->
+        <div
+          class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+          data-aos="fade-up" data-aos-delay="300">
+          <img src="images/chat-board.png" alt="Chat Board" class="w-full h-auto" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chat Board System</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              Created a simple WhatsApp-style chat system using Laravel and
+              MySQL. Admins can message all users or individuals, while users
+              can send messages to the admin. Chat history is grouped by date
+              (like Today, Yesterday) for better readability. Designed with
+              HTML, CSS, and TailwindCSS for a clean UI.
+            </p>
+          </div>
+        </div>
+
+        <!-- Charity Exchange -->
+        <div
+          class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+          data-aos="fade-up" data-aos-delay="400">
+          <img src="images/charity-exchange.png" alt="Charity Exchange" class="w-full h-auto" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Charity Exchange — Donation Platform</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              A platform connecting donors and charities across USA, Canada, and
+              Israel. Joined as a developer and led a major upgrade — migrated the
+              entire codebase from PHP 7.4 to PHP 8.2 and Laravel 5.8 to Laravel 11,
+              integrated an AI chatbot, and resolved critical bugs across the platform.
+              Live at
+              <a href="https://charity.exchange/" target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline"><u>charity.exchange</u></a>.
+              Mobile app currently in development.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 relative" id="contact">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center mb-16">
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mt-4 tracking-tight">
           GET IN TOUCH
         </h2>
       </div>
 
       <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-        
+
         <div
           class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-md border border-slate-200/50 dark:border-slate-800/80"
           data-aos="fade-right">
@@ -811,7 +1176,7 @@
             </div>
 
             <button type="submit"
-              class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-xl shadow-lg transition-all hover:scale-[1.01]">
+              class="w-full bg-indigo-600 hover:bg-indigo-700 text-white dark:text-slate-950 font-semibold py-3 rounded-xl shadow-lg transition-all hover:scale-[1.01]">
               Send Message
             </button>
 
@@ -819,14 +1184,15 @@
           </form>
         </div>
 
-        
+
         <div class="flex flex-col justify-between space-y-8" data-aos="fade-left">
           <div
             class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-md border border-slate-200/50 dark:border-slate-800/80 space-y-6">
             <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Contact Information</h3>
             <ul class="space-y-6">
               <li class="flex items-center gap-4">
-                <div class="p-3 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 rounded-xl shadow-sm">
+                <div
+                  class="p-3 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 rounded-xl shadow-sm">
                   <i class="fa-solid fa-envelope text-xl"></i>
                 </div>
                 <div>
@@ -836,7 +1202,8 @@
                 </div>
               </li>
               <li class="flex items-center gap-4">
-                <div class="p-3 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 rounded-xl shadow-sm">
+                <div
+                  class="p-3 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 rounded-xl shadow-sm">
                   <i class="fa-brands fa-linkedin text-xl"></i>
                 </div>
                 <div>
@@ -846,7 +1213,8 @@
                 </div>
               </li>
               <li class="flex items-center gap-4">
-                <div class="p-3 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 rounded-xl shadow-sm">
+                <div
+                  class="p-3 bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 rounded-xl shadow-sm">
                   <i class="fa-solid fa-location-dot text-xl"></i>
                 </div>
                 <div>
@@ -863,7 +1231,7 @@
             <h4 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Resume & Codebases</h4>
             <div class="flex flex-wrap gap-4">
               <a href="my_resume.pdf" download target="_blank"
-                class="px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-xl shadow-md flex items-center gap-2 text-sm transition-all hover:-translate-y-0.5">
+                class="px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white dark:text-slate-950 font-semibold rounded-xl shadow-md flex items-center gap-2 text-sm transition-all hover:-translate-y-0.5">
                 <i class="fa-solid fa-file-arrow-down"></i> Download Resume
               </a>
               <a href="https://github.com/prahlad-tech/" target="_blank"
@@ -877,13 +1245,13 @@
     </div>
   </section>
 
-  
+
   <footer
     class="bg-slate-50 dark:bg-slate-950 text-slate-600 dark:text-slate-400 py-16 border-t border-slate-200 dark:border-slate-900 relative z-10 transition-colors duration-300">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
 
-        
+
         <div>
           <span class="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">PRAHLAD</span>
           <p class="text-slate-550 dark:text-slate-500 text-sm mt-3 leading-relaxed">
@@ -892,7 +1260,7 @@
           </p>
         </div>
 
-        
+
         <div>
           <h4 class="text-slate-900 dark:text-white font-semibold mb-4 text-sm uppercase tracking-wider">Quick
             Navigation</h4>
@@ -902,11 +1270,12 @@
             <a href="#skills" class="hover:text-indigo-600 dark:hover:text-white transition-colors">Skills</a>
             <a href="#services" class="hover:text-indigo-600 dark:hover:text-white transition-colors">What I Do</a>
             <a href="#experience" class="hover:text-indigo-600 dark:hover:text-white transition-colors">Experience</a>
+            <a href="#projects" class="hover:text-indigo-600 dark:hover:text-white transition-colors">Projects</a>
             <a href="#contact" class="hover:text-indigo-600 dark:hover:text-white transition-colors">Contact</a>
           </div>
         </div>
 
-        
+
         <div>
           <h4 class="text-slate-900 dark:text-white font-semibold mb-4 text-sm uppercase tracking-wider">Follow Me</h4>
           <div class="flex gap-6 text-3xl">
@@ -926,18 +1295,17 @@
       <div
         class="pt-8 border-t border-slate-200 dark:border-slate-900 text-center text-xs text-slate-500 dark:text-slate-600 flex flex-col sm:flex-row justify-between items-center gap-4">
         <p>&copy; 2026 Prahlad Chaudhary. All Rights Reserved.</p>
-        <p class="flex items-center gap-1.5"><i class="fa-solid fa-heart text-red-500"></i> Designed in SaaS Style</p>
       </div>
     </div>
   </footer>
 
-  
+
   <button id="btn-back-to-top"
-    class="p-3.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl shadow-lg transition-all duration-300 hover:scale-110 hover:-translate-y-0.5 focus:outline-none border border-indigo-500/20">
+    class="p-3.5 bg-indigo-600 hover:bg-indigo-700 text-white dark:text-slate-950 rounded-xl shadow-lg transition-all duration-300 hover:scale-110 hover:-translate-y-0.5 focus:outline-none border border-indigo-500/20">
     <i class="fa-solid fa-arrow-up text-lg"></i>
   </button>
 
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -950,7 +1318,7 @@
     });
   </script>
 
-  
+
   <script src="js/theme.js"></script>
   <script src="js/navbar.js"></script>
   <script src="js/scroll.js"></script>

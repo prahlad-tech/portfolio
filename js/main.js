@@ -80,5 +80,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Welcome console logs
   console.log("%cHi, I'm Prahlad Chaudhary!", "color: #6366f1; font-size: 18px; font-weight: bold;");
-  console.log("%cFull Stack Developer Portfolio Redesigned (SaaS Style) 🚀", "color: #a855f7; font-size: 14px;");
+  console.log("%cFull Stack Developer", "color: #a855f7; font-size: 14px;");
 });
