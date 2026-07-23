@@ -1,12 +1,12 @@
-# Prahlad Chaudhary — Full-Stack Developer
+# Prahlad Chaudhary - Full-Stack Developer
 
-I am Prahlad, a Full-Stack Developer with hands-on experience in building secure, responsive, and scalable web applications. I work across the full stack — PHP, Laravel, JavaScript, React.js, Node.js, and MySQL — delivering clean, maintainable code that performs in production.
+I am Prahlad, a Full-Stack Developer with hands-on experience in building secure, responsive, and scalable web applications. I work across the full stack - PHP, Laravel, JavaScript, React.js, Node.js, and MySQL - delivering clean, maintainable code that performs in production.
 
-I have built and integrated RESTful APIs with secure authentication, and worked with international payment gateways including Razorpay, PayPal, Stripe, Cardcom, Braintree, and Elavon — handling real cross-border transaction flows for different client requirements.
+I have built and integrated RESTful APIs with secure authentication, and worked with international payment gateways including Razorpay, PayPal, Stripe, Cardcom, Braintree, and Elavon - handling real cross-border transaction flows for different client requirements.
 
-On the AI side, I have developed an AI agent using Pabbly and webhooks to automate workflows, reduce manual tasks, and streamline data processing — bringing smart automation into real projects, not just theory.
+On the AI side, I have developed an AI agent using Pabbly and webhooks to automate workflows, reduce manual tasks, and streamline data processing - bringing smart automation into real projects, not just theory.
 
-I also have solid experience with Laravel's export functionality — generating Excel and PDF reports that make data accessible and actionable for end users.
+I also have solid experience with Laravel's export functionality - generating Excel and PDF reports that make data accessible and actionable for end users.
 
 ## Tech Stack
 
