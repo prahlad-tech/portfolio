@@ -29,8 +29,21 @@
   --color-primary-950: #1e3a8a;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section[id] {
+  scroll-margin-top: 100px;
 }
 
 /* Glassmorphism */
@@ -242,6 +255,7 @@ body {
   opacity: 0;
   transition: opacity 0.4s ease;
   pointer-events: none;
+  will-change: transform;
 }
 
 .glow-card-wrapper:hover .glow-beam {
@@ -310,4 +324,57 @@ body {
     flex-shrink: 0 !important;
   }
 }
+
+/* Hamburger animation */
+#hamburger span {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, background-color 0.3s ease;
+}
+
+#hamburger.open span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+#hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger.open span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Mobile Menu Transition */
+#mobile-menu {
+  display: block !important;
+  transform: translateY(-10px) scale(0.95);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+}
+
+#mobile-menu.open {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile active scroll-glow triggers */
+.glow-card-wrapper.active-glow {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px -10px rgba(56, 189, 248, 0.25);
+  background: transparent;
+}
+
+.glow-card-wrapper.active-glow .glow-beam {
+  opacity: 1;
+}
+
+.glow-card-wrapper.active-glow .blob-container {
+  opacity: 1;
+}
+
+/* Pulse animation helper */
+.pulse-indicator {
+  animation: pulse-glow 2s infinite;
+}
+
 

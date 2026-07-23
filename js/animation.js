@@ -129,4 +129,36 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 5. Intersection Observer for Mobile Scroll Card Glow
+  if ('IntersectionObserver' in window) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-15% 0px -15% 0px', // Active when card is in center area of viewport
+      threshold: 0.1
+    };
+
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        // Only apply scroll-glow on mobile & tablet (width < 1024px)
+        if (window.innerWidth < 1024) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active-glow');
+            const blob1 = entry.target.querySelector('.blob-1');
+            const blob2 = entry.target.querySelector('.blob-2');
+            if (blob1 && blob2) {
+              blob1.style.transform = 'translate3d(40px, 40px, 0)';
+              blob2.style.transform = 'translate3d(60px, 60px, 0) scale(1.1)';
+            }
+          } else {
+            entry.target.classList.remove('active-glow');
+          }
+        }
+      });
+    }, observerOptions);
+
+    glowCards.forEach(card => {
+      cardObserver.observe(card);
+    });
+  }
 });

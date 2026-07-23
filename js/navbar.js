@@ -50,13 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // 3. Hamburger menu events
   if (hamburger && mobileMenu) {
     hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('open');
       hamburger.classList.toggle('open');
     });
 
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('open');
         hamburger.classList.remove('open');
       });
     });
